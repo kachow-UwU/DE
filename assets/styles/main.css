@@ -1,0 +1,169 @@
+@import url("./reset.css");
+
+/* Шрифты */
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RobotoRegular.ttf");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 7px;
+}
+
+.section {
+  width: 100%;
+  padding: 10px 7px;
+}
+
+/* header */
+.section_header {
+  background-color: #c1c1c1;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a img {
+  max-width: 50px;
+}
+
+.header div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* main */
+.main {
+  margin: 0 auto;
+}
+
+.main, .main > div {
+  width: 100%;
+}
+
+.tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.tracker button {
+  padding: 10px;
+}
+
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 10px;
+  justify-content: center;
+  align-items: start;
+}
+
+.order__block {
+  max-width: 580px;
+  display: grid;
+  gap: 5px;
+}
+
+.order__block .after {
+  display: none;
+}
+
+.order__block:hover .before {
+  display: none;
+}
+
+.order__block:hover .after {
+  display: inline-block;
+}
+
+.order__block div {
+  max-width: 100%;
+  max-height: 326px;
+}
+
+.order__block div img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* sign up, login pages*/
+.section_form {
+  height: 100%;
+  padding: 7px 0 0 0;
+}
+
+.section_form__flex {
+  background-color: #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px;
+}
+
+.form_login {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* table */
+
+table, th, td {
+  border: 1px solid #1c1c1c;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th div, td div {
+  max-width: 102px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+table div img {
+  max-width: 102px;
+  object-fit: cover;
+}
+
+/* nav */
+
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
